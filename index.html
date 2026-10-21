@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10151d">
+  <meta name="description" content="八个可交互的蛋白质实验：从缩合成肽、酸碱解离，到螺旋、折叠与分子协作。基于《蛋白质》课件，排除肽平面专题。">
+  <title>蛋白质 · 形状的逻辑 | Protein, in Motion</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2310151d'/%3E%3Cpath d='M18 8C58 20 6 44 46 56M46 8C6 20 58 44 18 56' fill='none' stroke='%2370d6d0' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#lab">跳到互动实验</a>
+  <header class="site-header"><a class="brand" href="#top"><svg viewBox="0 0 32 38" aria-hidden="true"><path d="M7 2C37 12-5 26 25 36M25 2C-5 12 37 26 7 36"/><path class="rungs" d="M10 6h12M10 15h12M10 24h12M10 33h12"/></svg><span>形状的逻辑<small>PROTEIN, IN MOTION</small></span></a><nav aria-label="主导航"><a href="#lab">互动实验 <span>↗</span></a><a href="#map">知识地图</a><a href="#sources">内容依据</a></nav><span class="edition">BIOLOGY / 01</span></header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> A VISUAL JOURNEY INTO PROTEINS</p><h1>从一条链，<br>到生命的<span>形状。</span></h1><p class="intro">如果把蛋白质的知识变成可以拨动的画面，<br class="desktop">那些需要记住的结论，就有了看得见的理由。</p><a class="primary" id="start" href="#lab">开始探索 <span>↓</span></a><span class="hero-note">8 个实验 · 自由交互 · 中文讲解</span></div>
+      <div class="hero-art"><canvas id="hero-canvas" role="img" aria-label="旋转的右手α螺旋示意，青色主链与金色氢键"></canvas><div class="hero-equation"><span class="math">sequence</span><i>→</i><span class="math">structure</span><i>→</i><span class="math">function</span></div><div class="art-caption"><span>FIG. 01 &nbsp; α-HELIX</span><span>秩序，藏在重复之中。</span></div></div>
+    </section>
+    <div class="section-heading" id="lab"><div><p class="eyebrow">THE INTERACTIVE NOTEBOOK</p><h2>把抽象的概念，握在手里。</h2></div><p>选一个主题，改变一个条件，观察它如何变化。</p></div>
+    <section class="notebook" aria-label="蛋白质互动实验室">
+      <aside class="chapters"><p class="sidebar-label">探索目录 <span>01 — 08</span></p><nav id="chapter-nav" aria-label="实验主题"></nav><div class="sidebar-foot"><span class="dot"></span> 从课件出发，以直觉理解<br><small>已排除肽平面与二面角专题</small></div></aside>
+      <div class="experiment"><div class="experiment-heading"><div><span class="scene-number" id="scene-number">04 / SECONDARY STRUCTURE</span><h3 id="scene-title">α 螺旋</h3></div><div class="scene-actions"><button id="pause" class="icon-button" aria-label="暂停自动旋转" aria-pressed="false">Ⅱ</button><button id="reset" class="icon-button" aria-label="重置当前实验">↺</button></div></div><div class="canvas-wrap"><canvas id="scene" role="img" aria-describedby="scene-summary"></canvas><div class="canvas-top"><span id="view-label">空间示意</span><span class="live"><span class="dot"></span> INTERACTIVE</span></div><span id="canvas-hint" class="canvas-hint">拖动模型，改变视角</span></div><div class="scene-readout" id="readout" aria-live="polite"></div><p id="scene-summary" class="sr-only"></p><div class="experiment-bottom"><span id="page-source"></span><button id="next">下一个实验 <span>→</span></button></div></div>
+      <aside class="inspector"><p class="eyebrow" id="concept-kicker"></p><h4 id="concept-title"></h4><p id="concept-copy"></p><div class="formula" id="formula"></div><div id="controls"></div><div class="insight"><span>观察线索</span><p id="insight"></p></div><p class="model-note" id="model-note"></p></aside>
+    </section>
+    <section class="map-section" id="map"><div class="section-heading"><div><p class="eyebrow">FROM CHEMISTRY TO ARCHITECTURE</p><h2>不是八段孤立的知识。</h2></div><p>同一条线索，贯穿不同尺度。</p></div><div class="knowledge-path"><button data-open="0"><span>01 — 03</span><h3>连接与性质</h3><p>残基如何连接？<br>环境怎样改变它的表现？</p><b>化学组成 <i>→</i></b></button><button data-open="3"><span>04 — 05</span><h3>局部的秩序</h3><p>相同的主链，<br>怎样形成不同的重复结构？</p><b>二级结构 <i>→</i></b></button><button data-open="5"><span>06 — 07</span><h3>整体的形状</h3><p>一条链折叠，几条链协作。<br>连接的位置同样重要。</p><b>空间组织 <i>→</i></b></button><button data-open="7"><span>08</span><h3>结构参与功能</h3><p>一个巯基的变化，<br>也能连接细胞的氧化还原世界。</p><b>化学功能 <i>↗</i></b></button></div></section>
+    <section class="sources" id="sources"><div><p class="eyebrow">READ THE FOOTNOTES</p><h2>让图像有依据，<br>也让简化有边界。</h2><p>基于所提供的《蛋白质》20 页课件。<br>用动态示意解释概念，不把示意模型当作真实分子轨迹。</p></div><div class="source-details"><details open><summary>课件覆盖与补充范围 <span>↗</span></summary><p>第 3–5 页：成肽、残基与 N→C 书写；第 8 页：解离与双缩脲反应；第 10 页：GSH；第 12、15–18 页：层次、一级结构与胰岛素；第 19–20 页：二级结构与 α 螺旋。第 6–7 页肽平面与二面角不纳入。</p><p>β 折叠细节、GSH 氧化还原方程与酸碱分布曲线是帮助理解的补充。课件中的残基数分类不是普适硬边界；复杂肽的 pI 可用模型估算，但精确值依赖环境与实验。</p></details><details><summary>进一步阅读与事实核对 <span>↗</span></summary><ul><li><a href="https://www.ncbi.nlm.nih.gov/books/NBK26830/" target="_blank" rel="noopener">Molecular Biology of the Cell · 蛋白质的形状与结构 ↗</a></li><li><a href="https://openstax.org/books/organic-chemistry/pages/26-9-protein-structure" target="_blank" rel="noopener">OpenStax · Protein Structure ↗</a></li><li><a href="https://www.rcsb.org/structure/4INS" target="_blank" rel="noopener">RCSB PDB · 4INS 胰岛素结构 ↗</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/12485918/" target="_blank" rel="noopener">Glutathione in defense and signaling ↗</a></li></ul></details><details><summary>模型说明与无障碍 <span>↗</span></summary><p>螺旋按课件的 3.6 残基/圈、0.54 nm 螺距生成；其余几何为概念示意，未使用 PDB 原子坐标。成肽动画表示净化学计量，实际生物合成需要活化与催化。双缩脲显色只作定性判断。折叠动画不是能量模拟。GSH 动画不构成任何美容或治疗效果的推论。</p><p>滑块支持方向键；所有交互均有文字读数。系统开启“减少动态效果”时默认停止自动旋转，也可使用实验右上角暂停。图像通过线型、标签和颜色共同表达含义。</p></details></div></section>
+  </main><footer><a class="footer-brand" href="#top">形状的逻辑 <span>PROTEIN, IN MOTION</span></a><p>把知识画出来，也把为什么讲清楚。</p><span>AN INTERACTIVE SCIENCE NOTEBOOK · 2026</span></footer>
+  <noscript>本页面的动态实验需要开启 JavaScript。知识范围和参考资料仍可在下方阅读。</noscript>
+</body></html>
